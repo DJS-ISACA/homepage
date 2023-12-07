@@ -124,9 +124,9 @@ const Navbar = () => {
             />
           </svg>
           </Link>
-          <button class={`hamburger hamburger--squeeze ${open&&"is-active"}`} type="button" onClick={()=>setopen(!open)}>
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+          <button className={`hamburger hamburger--squeeze ${open&&"is-active"}`} type="button" onClick={()=>setopen(!open)}>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
             </span>
           </button>
         </div>
