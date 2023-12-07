@@ -12,7 +12,7 @@ function Footer() {
           href="/"
           className="text-center text-stone-300 hover:text-white text-base font-normal font-['Chakra Petch'] uppercase leading-tight"
         >
-          Insatagram
+          Instagram
         </a>
         <a
           href="/"
