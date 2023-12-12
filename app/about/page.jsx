@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       {/* top main */}
-      <section className="w-full h-screen pt-20 pb-5 justify-between items-center inline-flex gap-20">
+      <section className="w-full h-screen pt-20 pb-5 justify-between items-center inline-flex gap-20 flex-col-reverse md:flex-row">
         <div className="grow h-full self-stretch justify-center flex-col gap-2.5 inline-flex">
           <div className="text-white text-opacity-90 text-6xl font-bold font-['Chakra Petch'] uppercase tracking-widest">
             <span className="text-stroke text-transparent">We Are the</span>{" "}
@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       {/* faculty */}
-      <section className="w-full pt-20 pb-5 justify-center items-center gap-14 inline-flex">
+      <section className="w-full pt-20 pb-5 justify-center items-center gap-14 inline-flex flex-col  md:flex-row">
         <div className="justify-start items-center gap-5 flex">
           <TeamCard
             name="Dr. Narendra Shekhokar"
@@ -30,10 +30,7 @@ export default function Home() {
           />
         </div>
         <div className=" w-96 h-full flex-col justify-center items-end gap-2.5 inline-flex">
-          <div className="text-right text-white text-opacity-90 text-4xl font-bold font-['Chakra Petch'] uppercase leading-10 tracking-widest">
-            We Are the Frontline
-          </div>
-          <div className="text-right text-stone-300 text-lg font-normal font-['Chakra Petch'] uppercase leading-normal">
+          <div className="md:text-right text-center text-stone-300 text-lg font-normal font-['Chakra Petch'] uppercase leading-normal">
             Lorem ipsum dolor sit amet consectetur. In eget sed ut nisl. Amet
             amet morbi et cras molestie euismod in mauris arcu. Sed ipsum tellus
             lorem vivamus molestie. Commodo velit adipiscing phasellus sit vitae
@@ -46,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* meet the core */}
-      <section className="w-full pt-40 pb-5 relative gap-60 justify-between items-start inline-flex">
+      <section className="w-full pt-40 pb-5 relative gap-60 justify-between items-start inline-flex flex-col  xl:flex-row">
         <div className="flex-col justify-start items-start gap-5 inline-flex sticky top-1/2">
           <div className="text-5xl text-stroke text-transparent font-bold font-['Chakra Petch'] uppercase leading-10 tracking-widest">
             Meet
@@ -59,14 +56,14 @@ export default function Home() {
           {TeamDetails.map((member, key) => (
             <div
               key={key}
-              className="sjustify-start items-center gap-10 inline-flex"
+              className="justify-start items-center gap-10 inline-flex flex-col  md:flex-row"
             >
               <TeamCard
                 name={member.name}
                 role={member.role}
                 img={member.img}
               />
-              <div className=" text-stone-300 text-lg font-normal font-['Chakra Petch'] uppercase leading-normal">
+              <div className="text-center md:text-left text-stone-300 text-lg font-normal font-['Chakra Petch'] uppercase leading-normal">
                 {member.description}
               </div>
             </div>
